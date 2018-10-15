@@ -1,0 +1,30 @@
+.menu {
+  display: flex;
+  list-style: none;
+  margin-bottom: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.menu li a {
+  margin: 10px 55px;
+  padding: 0.5em 0.8em;
+  text-decoration: none;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.menu li:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 8px;
+  background: #ffd34f;
+  transition: width .3s;
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
